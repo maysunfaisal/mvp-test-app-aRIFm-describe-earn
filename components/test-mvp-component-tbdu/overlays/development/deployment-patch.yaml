@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-tbdu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:3aa5a09dd8f3c2945e043e5a28835454ed904f7a6d7bb77af0abf7adeccfaa7f
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
